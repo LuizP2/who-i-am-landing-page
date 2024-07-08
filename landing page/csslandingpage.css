@@ -4,6 +4,7 @@ body{
 header{
   background-color:#000000; 
   box-shadow: 0px 3px 10px;
+  position: sticky;
 }
 .navbar{
     display: flex;
@@ -22,7 +23,11 @@ header{
 .navlist ul{
     display: flex;
     list-style: none;
+    border: none;
     justify-content: space-between;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
 }
 .navitem{
     margin: 20px;
@@ -31,6 +36,7 @@ header{
 .navlink {
     text-decoration: none;
     color: white;
+    font-size: 25px;
 }
 .btncontato button {
     text-decoration: none;
@@ -42,4 +48,65 @@ header{
 .btnlink {
     text-decoration: none;
     color: #fff;
+}
+.main {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+}
+.descrição h2{ 
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.minhafoto{
+    display: flex;
+    justify-content: flex-end;
+}
+.mobile-menu{
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0%;
+    margin: 0%;
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-navlist{
+    display: none;
+}
+.mobile-btncontato{
+    display: none;
+}
+@media screen and (max-width: 790px){
+    .navbar{
+        padding: 1.5rem 4rem;
+    }
+    .navlist{
+        display: none;
+    }
+    .btncontato{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .mobile-menu button{
+        cursor: pointer;
+        background-color: #050224;
+    }
+    .MobileNavlist{
+        display: none;
+    }
+    .MobileNavlist ul{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+    }
+    .aberto {
+        display: block;
+    }
 }
